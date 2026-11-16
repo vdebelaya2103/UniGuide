@@ -1,0 +1,339 @@
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  padding: 24px 40px;
+  background-color: #0f766e;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.main {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.main h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.main p {
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.auth-card {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+.auth-card h2 {
+  margin: 0 0 24px;
+  font-size: 26px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-card label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline-color: #0f766e;
+}
+
+.auth-card button {
+  padding: 12px 16px;
+  background: #0f766e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.auth-card form button {
+  margin-top: 12px;
+}
+
+.auth-card button:hover {
+  background: #115e59;
+}
+
+.auth-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-card .switch-button {
+  width: 100%;
+  margin-top: 16px;
+  background: transparent;
+  color: #0f766e;
+}
+
+.auth-card .switch-button:hover {
+  background: #f0fdfa;
+}
+
+.form-message {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.user-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.user-dashboard .auth-card {
+  width: 100%;
+  max-width: none;
+}
+
+.interests-section {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.interests-section h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.interests-section p {
+  margin: 0 0 20px;
+  font-size: 15px;
+}
+
+.interests-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.interest-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.interest-item:hover {
+  background: #f0fdfa;
+  border-color: #0f766e;
+}
+
+.interest-item input {
+  accent-color: #0f766e;
+}
+
+.interests-section button {
+  padding: 12px 20px;
+  background: #0f766e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.interests-section button:hover {
+  background: #115e59;
+}
+
+@media (max-width: 480px) {
+  .interests-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recommendations-section {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.recommendations-section h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.recommendations-section > p {
+  font-size: 15px;
+}
+
+.activities-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.activity-card {
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.activity-card h3 {
+  margin: 0 0 12px;
+  font-size: 19px;
+}
+
+.activity-card p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.details-button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background: #115e59;
+}
+
+.activity-details {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.activity-details a {
+  color: #0f766e;
+  font-weight: 600;
+}
+.favorite-button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  background: #ffffff;
+  color: #0f766e;
+  border: 1px solid #0f766e;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.favorite-button:hover {
+  background: #f0fdfa;
+}
+
+.dashboard-nav {
+  display: flex;
+  gap: 12px;
+}
+
+.dashboard-nav button {
+  flex: 1;
+  padding: 14px 20px;
+  background: #ffffff;
+  border: 1px solid #dbe4ec;
+  border-radius: 10px;
+  color: #475569;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dashboard-nav button:hover {
+  border-color: #0f766e;
+  color: #0f766e;
+}
+
+.dashboard-nav button.active {
+  background: #0f766e;
+  color: #ffffff;
+  border-color: #0f766e;
+}
+
+.favorites-section {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.favorites-section h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.favorites-section > p {
+  font-size: 15px;
+}
+
+@media (max-width: 480px) {
+  .dashboard-nav {
+    flex-direction: column;
+  }
+}
+
+.catalog-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.catalog-filter label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.catalog-filter select {
+  width: 100%;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #1e293b;
+  font: inherit;
+  cursor: pointer;
+}
+
+.catalog-filter select:focus {
+  outline: 2px solid #0f766e;
+  outline-offset: 2px;
+}
